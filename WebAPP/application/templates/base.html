@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %} {% endblock %}</title>
         <style>
+          body{
+            background-color:lightskyblue;
+          }
           footer {  
             position: absolute;
             bottom: 0;
@@ -16,8 +19,11 @@
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Imposters</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          
+            <a class="navbar-brand" href="#">
+             <img src="images/blue.png" alt="blue" style="widows: 20px;height:20px;"> Imposters</a>   
+             <!-- cannot get image to load -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,3 +87,8 @@
       <p class="text-bottom">&#169; Copyright 2020</p>
     </footer>
 </html>
+
+<!-- 
+  NOTES: 
+redirect to home.html needs to be created
+-->
