@@ -2,6 +2,55 @@
 {% block title %}Imposters{% endblock %}
 
 {% block content %} 
-    <h1>Home</h1>
+    <!-- First Grid-->
+<div class="w3-row">
+    <div class="w3-half w3-cyan w3-container w3-center w3-responsive" style="height:700px">
+      <div class="w3-padding-64">
+        <img src="{{url_for('static', filename='logo.png')}}" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="w3-padding-64">
+        <p>Hello! I am George, the Imposter!</p>
+        <p>I am your personal assistant,who, much like your spouse can keep track of everything you do!</p>
+        <p>I can track your exercise routine, your diet and everything you do and even remind you to do it.</p>
+        <p>And, if you want me to do something more, just ask and eventually my creators will give me the ability to do as you wish.</p>
+      </div>
+    </div>
+    <div class="w3-half w3-sand w3-container w3-responsive" style="height:700px">
+      <div class="w3-padding-64 w3-center">
+        <h1>Features To Implement</h1>
+        <br>
+        <div class="w3-padding-large">
+          <a class="nav-link" href="#">Fitness</a>
+          <a class="nav-link" href="#">Schedules</a>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Grid-->
+  <div class="w3-row">
+    <div class="w3-half w3-pink w3-center w3-responsive" style="min-height:800px" id="work">
+      <div class="w3-padding-64 w3-text-black">
+        <h2>Accounts</h2>
+        <p>Here you can find the various applications which I can use to assist you with tracking your finances</p>
+        
+      </div><br>
+      <div class="w3-text-black">
+      <a class="nav-link" href="{{url_for('account')}}">Account Type</a>
+      <a class="nav-link" href="{{url_for('balance')}}">Balances</a>
+      <a class="nav-link" href="{{url_for('transactions')}}">Transactions</a>
+    </div>
+    </div>
+  
+    <div class="w3-half w3-indigo w3-container w3-responsive" style="min-height:800px">
+      <div class="w3-padding-64 w3-center w3-text-black">
+        <h2>Fitness</h2>
+        <p>COMING SOON!</p>
+        <div class="w3-container w3-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
 

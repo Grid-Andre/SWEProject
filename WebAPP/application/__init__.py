@@ -9,7 +9,8 @@ from flask_bcrypt import Bcrypt
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-app = Flask(__name__)
+app = Flask(__name__,)
+            
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Database.db'
 app.config['SECRET_KEY'] = 'hfouewhfoiwefoquw'
