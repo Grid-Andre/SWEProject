@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 {% block title %}Balance{% endblock %}
 
-{% block content %} <h1>Balance</h1> {% endblock %}
+{% block content %} 
+{% from "_formhelpers.html" import render_field %}
+
+
+<form action="{{url_for('showbalance')}}" method="POST">
+    {{form.csrf_token}}
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1">
+          {{ render_field(form.Account, class="form-control") }}
+        </select>
+      </div>
+      <div class="col-auto my-1"></div>
+        
+      </div>
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-primary" value="Add">View {{value.AccountType}} Balance</button> 
+      </div
+    </div>
+  </form>
+
+<p>{{value}}</p>
+
+{% endblock %}
 

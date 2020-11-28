@@ -22,6 +22,7 @@ class Register(db.Model, UserMixin):
     profile = db.Column(db.String(200), unique= False , default='profile.jpg')
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
+
     def __repr__(self):
         return '<Register %r>' % self.name
 
