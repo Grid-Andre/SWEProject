@@ -25,7 +25,7 @@ def showbalance():
             username=current_user.name,
             AccountType=form.Account.data
             ).order_by(Finance.transaction).all()
-        
+
     return render_template('finance/balance.html', form=form, value=balance)
 
 @app.route('/account/addaccount', methods=['GET', 'POST'])
