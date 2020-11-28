@@ -7,17 +7,17 @@
 
 <form action="{{url_for('showbalance')}}" method="POST">
     {{form.csrf_token}}
-    <div class="form-row align-items-center">
-      <div class="col-auto my-1">
+    <div class="a">
+      <div class="a">
           {{ render_field(form.Account, class="form-control") }}
         </select>
       </div>
-      <div class="col-auto my-1"></div>
+      <div ></div>
         
       </div>
-      <div class="col-auto my-1">
+      <div class="a">
         <button type="submit" class="btn btn-primary" value="Add">View {{value.AccountType}} Balance</button> 
-      </div
+      </div>
     </div>
   </form>
 
