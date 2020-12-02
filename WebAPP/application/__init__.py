@@ -41,5 +41,6 @@ login_manager.login_message = u"Please login first"
 from application.admin import routes
 from application.users import routes
 from application.finance import routes
+from application.fitness import routes
 
 # end

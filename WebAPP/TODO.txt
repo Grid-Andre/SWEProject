@@ -5,5 +5,5 @@
     3- add "recurring - monthly" and "non-recurring" as options for update accounts
     4 - add button to "remove non-recurring transactions" as a delete for the system 
 
-    5 - mirror update accounts for fitness 
-    6 - mirror view balances and view transactions for fitness 
+    5 - mirror update accounts for fitness (Done)
+    6 - mirror view balances and view transactions for fitness (Done)

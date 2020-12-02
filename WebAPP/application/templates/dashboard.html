@@ -70,12 +70,21 @@
       function accountButton3() {
         location.replace("{{url_for('transactions')}}")
       }
+      function calculateCalories() {
+        location.replace("{{url_for('fitness')}}")
+      }
       </script>
+
+
     <div class="w3-half w3-indigo w3-container w3-responsive" style="min-height:800px">
       <div class="w3-padding-64 w3-center w3-text-black">
         <img src="{{url_for('static', filename='impostor_fitness.jpg')}}" class="img-fluid" alt="Responsive image">
+
         <h2>Fitness</h2>
-        <p>COMING SOON!</p>
+        <div>
+          <input type="button" class="button" onclick="calculateCalories()" value="Calculate Calories"> 
+        </div>
+
         <div class="w3-container w3-responsive">
         </div>
       </div>
