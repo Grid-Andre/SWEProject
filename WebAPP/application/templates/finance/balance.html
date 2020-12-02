@@ -4,9 +4,10 @@
 {% block content %} 
 {% from "_formhelpers.html" import render_field %}
 
-
+<div>
 <form action="{{url_for('showbalance')}}" method="POST">
     {{form.csrf_token}}
+
     <div class="a">
       <div class="a">
           {{ render_field(form.Account, class="form-control") }}
@@ -16,13 +17,21 @@
         
       </div>
       <div class="a">
-        <button type="submit" class="btn btn-primary" value="Add">View {{value.AccountType}} Balance</button> 
+        <button type="submit" class="btn btn-secondary" value="Add">View {{value.AccountType}} Balance</button> 
       </div>
     </div>
   </form>
+</div>
+
+<hr>
 
 
-<p>{{value}}</p>
+  <div class="card">
+    <div class="card-body">
+      <p>${{value}}</p>
+    </div>
+  </div>
+
 
 {% endblock %}
 

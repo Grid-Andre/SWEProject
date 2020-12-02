@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="text-center bg-info p-2 h4">Login</div>
+                <div class="text-center p-2 h4">Login</div>
                 {% from "_formhelpers.html" import render_field %}
                 {% include '_messages.html' %}
                 <form method=post>
@@ -14,7 +14,7 @@
                     {{ render_field(form.email, class="form-control") }}
                     {{ render_field(form.password, class="form-control") }}
                 </div>
-                <p><input type="submit" value="Login" class="btn-info">
+                <p><input type="submit" value="Login" class="text-light bg-dark">
                 </form>
             </div>
       <div class="col-md-3"></div>

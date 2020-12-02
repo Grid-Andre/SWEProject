@@ -36,7 +36,8 @@ def addaccount():
         try:
             db.session.add(finance)
             db.session.commit()
-            return redirect(url_for('account'))
+            flash('You successfully added your transaction.')
+            return redirect(url_for('addaccount'))
         except exc.IntegrityError:
             return redirect(url_for('addaccount'))
               

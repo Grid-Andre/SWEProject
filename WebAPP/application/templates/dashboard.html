@@ -7,28 +7,23 @@
     <div class="w3-half w3-cyan w3-container w3-center" style="height:700px">
       <div class="w3-padding-64">
         <img src="{{url_for('static', filename='impostor_logo.jpg')}}" class="img-fluid" alt="Responsive image">
+        <h1>Introduction</h1>
       </div>
-      <div class="w3-padding-64">
-        <p>Hello! I am George, the Imposter!</p>
-        <p>I am your personal assistant,who, much like your spouse can keep track of everything you do!</p>
-        <p>I can track your exercise routine, your diet and everything you do and even remind you to do it.</p>
-        <p>And, if you want me to do something more, just ask and eventually my creators will give me the ability to do as you wish.</p>
+      <div class="w3-padding-small">
+        <h5>Hello! I am George, the Imposter!</h5>
+        <p>I am your personal assistant,who, much like your spouse can keep track of everything you do!
+        I can track your exercise routine, your diet and everything you do and even remind you to do it.
+        And, if you want me to do something more, just ask and eventually my creators will give me the ability to do as you wish.</p>
       </div>
     </div>
-    <div class="w3-half w3-light_blue w3-container w3-responsive" style="height:700px">
+    
+    <div class="w3-half w3-light_blue w3-container" style="height:700px">
       <div class="w3-padding-64 w3-center">
         <img src="{{url_for('static', filename='impostor_coming_soon.png')}}" class="img-fluid" alt="Responsive image">
         <h1>Features To Implement</h1>
         <br>
         <div class="w3-padding-large">
-          <!-- <a class="nav-link" href="#">Fitness</a>
-          <a class="nav-link" href="#">Schedules</a> -->
-          <p>
-            Fitness
-          </p>
-          <p>
-            Schedules
-          </p>
+          <h3>Scheduling Application</h3>
         
         </div>
       </div>
@@ -37,14 +32,14 @@
   
   <!-- Second Grid-->
   <div class="w3-row">
-    <div class="w3-half w3-light_pink w3-center w3-responsive" style="min-height:800px" id="work">
-      <div class="w3-padding-64 w3-text-black">
+    <div class="w3-half w3-purple w3-center" style="min-height:800px" id="work">
+      <div class="w3-padding-64 w3-text-black w3-center ">
         <img src="{{url_for('static', filename='impostor_accounting.jpg')}}" class="img-fluid" alt="Responsive image">
         <h2>Accounts</h2>
-        <p>Here you can find the various applications which I can use to assist you with tracking your finances</p>
+        <p>Here you can find the various applications which I can use to assist you with tracking your finances.</p>
         
-      </div><br>
-      <div class="w3-text-black">
+      </div>
+      <div class="w3-text-black w3-center">
         <div>
        <input type="button" class="button" onclick="accountButton1()" value="Update Accounts"> 
         </div>
@@ -54,10 +49,6 @@
         <div>
           <input type="button" class="button" onclick="accountButton3()" value="Transactions">
         </div>
-
-      <!-- <a class="nav-link" href="{{url_for('addaccount')}}">Update Accounts</a>
-      <a class="nav-link" href="{{url_for('showbalance')}}">Balances</a>
-      <a class="nav-link" href="{{url_for('transactions')}}">Transactions</a> -->
     </div>
     </div>
     <script>
@@ -76,19 +67,19 @@
       </script>
 
 
-    <div class="w3-half w3-indigo w3-container w3-responsive" style="min-height:800px">
+    <div class="w3-half w3-indigo w3-container" style="min-height:800px">
       <div class="w3-padding-64 w3-center w3-text-black">
         <img src="{{url_for('static', filename='impostor_fitness.jpg')}}" class="img-fluid" alt="Responsive image">
 
         <h2>Fitness</h2>
-        <div>
-          <input type="button" class="button" onclick="calculateCalories()" value="Calculate Calories"> 
-        </div>
-
-        <div class="w3-container w3-responsive">
-        </div>
+        <p>Here you can find out how many calories would burn while doing specific exercises.</p>
       </div>
+      <div class="w3-text-black w3-center">
+        <input type="button" class="button" onclick="calculateCalories()" value="Calculate Calories"> 
+      </div>
+
     </div>
   </div>
+
 {% endblock %}
 
