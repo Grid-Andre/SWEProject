@@ -1,9 +1,6 @@
     TODO LIST
 
-    1 - form need to be given dropdown menu for view balances 
+    1 - fom need to be given dropdown menu for view balances 
     2 -  Result should display as a table for view balance and view transaction 
     3- add "recurring - monthly" and "non-recurring" as options for update accounts
     4 - add button to "remove non-recurring transactions" as a delete for the system 
-
-    5 - mirror update accounts for fitness 
-    6 - mirror view balances and view transactions for fitness 

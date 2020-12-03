@@ -1,5 +1,6 @@
-from wtforms import Form, BooleanField, StringField, PasswordField, validators, SubmitField, ValidationError, DecimalField, IntegerField
+from wtforms import Form, BooleanField, StringField, PasswordField, validators, SubmitField, ValidationError, DecimalField, IntegerField, SelectField
 from flask_wtf.file import FileRequired,FileAllowed, FileField
+from wtforms.ext.sqlalchemy.fields import QuerySelectField
 from flask_wtf import FlaskForm
 from .models import Fitness
 
